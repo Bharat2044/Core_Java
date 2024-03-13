@@ -1,0 +1,25 @@
+package com.bharat.operators;
+
+public class _01_ArithmeticOperators {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 4;
+        
+        double c = 8.9;
+        double d = 5.5;
+        
+        System.out.println(a + " + " + b + " = " + (a + b));
+        System.out.println(a + " - " + b + " = " + (a - b));
+        System.out.println(a + " * " + b + " = " + (a * b));
+        System.out.println(a + " / " + b + " = " + (a / b));
+        System.out.println(a + " % " + b + " = " + (a % b));
+        
+        System.out.println();
+        
+        System.out.println(c + " + " + d + " = " + (c + d));
+        System.out.println(c + " - " + d + " = " + (c - d));
+        System.out.println(c + " * " + d + " = " + (c * d));
+        System.out.println(c + " / " + d + " = " + (c / d));
+        System.out.println(c + " % " + d + " = " + (c % d));
+    }
+}

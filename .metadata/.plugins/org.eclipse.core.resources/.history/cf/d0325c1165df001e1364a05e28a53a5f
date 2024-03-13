@@ -1,0 +1,5 @@
+package com.bharat.operators;
+
+public class TernaryOrConditionalOperator {
+
+}

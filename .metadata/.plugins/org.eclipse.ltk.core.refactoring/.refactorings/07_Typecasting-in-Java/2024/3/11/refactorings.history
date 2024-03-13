@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.bharat.auto_or_widening&apos; to &apos;com.bharat.typecasting&apos;&#x0D;&#x0A;- Original project: &apos;07_Typecasting-in-Java&apos;&#x0D;&#x0A;- Original element: &apos;07_Typecasting-in-Java/src/com.bharat.auto_or_widening&apos;&#x0D;&#x0A;- Renamed element: &apos;07_Typecasting-in-Java/src/com.bharat.typecasting&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.bharat.auto_or_widening&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.bharat.auto_or_widening" name="com.bharat.typecasting" qualified="false" references="true" stamp="1710133789915" textual="false" version="1.0"/>
+</session>

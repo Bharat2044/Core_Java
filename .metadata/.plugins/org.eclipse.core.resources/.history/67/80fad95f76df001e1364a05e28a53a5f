@@ -1,0 +1,10 @@
+package com.bharat03.commandlinearguments;
+
+public class ReadIntegerValue {
+    public static void main(String args[]) {
+        
+        int a = Integer.parseInteger(args[0]);
+        
+        System.out.println("The number is: " + a);
+    }
+}
