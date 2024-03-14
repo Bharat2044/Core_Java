@@ -1,0 +1,8 @@
+package com.food.model;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		User u = new User(101, "Bharat", "bharat@gmail.com", "test", "Samastipur, Bihar");
+	}
+}
