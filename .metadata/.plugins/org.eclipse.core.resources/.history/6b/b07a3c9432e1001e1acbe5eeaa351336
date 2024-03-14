@@ -1,0 +1,144 @@
+package com.food.daoimpl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.food.dao.UserDao;
+import com.food.model.User;
+
+public class UserDaoImpl implements UserDao {
+	private static Connection connection = null;
+
+	final static String INSERT_QUERY = "INSERT INTO `foods` (`userId`, `username`, `password`, `email`, `address`) VALUES(?, ?, ?, ?, ?)";
+	final static String SELECT_QUERY = "SELECT * FROM `foods` WHERE `userId` = ?";
+	final static String UPDATE_QUERY = "UPDATE `foods` WHERE `username` = ?, `password` = ?, `email` = ?, `address` = ? WHERE `userId` = ?";
+	final static String DELETE_QUERY = "DELETE FROM `foods` WHERE `userId` = ?";
+	final static String SELECT_ALL_QUERY = "SELECT * FROM `foods`";
+
+	public UserDaoImpl() {
+		String url = "jdbc:mysql://localhost:3306/jdbc_db";
+		String username = "root";
+		String password = "test";
+
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			connection = DriverManager.getConnection(url, username, password);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void addUser(User user) {
+		PreparedStatement pstmt = null;
+
+		try {
+			pstmt = connection.prepareStatement(INSERT_QUERY);
+			pstmt.setInt(1, user.getUserId());
+			pstmt.setString(2, user.getUsername());
+			pstmt.setString(3, user.getPassword());
+			pstmt.setString(4, user.getEmail());
+			pstmt.setString(5, user.getAddress());
+
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public User getUser(int userId) {
+		PreparedStatement pstmt = null;
+		ResultSet res = null;
+		User user = null;
+
+		try {
+			pstmt = connection.prepareStatement(SELECT_QUERY);
+			pstmt.setInt(1, userId);
+
+			res = pstmt.executeQuery();
+
+			if (res.next()) {
+				int id = res.getInt("userId");
+				String userName = res.getString("userName");
+				String password = res.getString("password");
+				String email = res.getString("email");
+				String address = res.getString("address");
+
+				user = new User(id, userName, password, email, address);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return user;
+	}
+
+	@Override
+	public void updateUser(User user) {
+		PreparedStatement pstmt = null;
+
+		try {
+			pstmt = connection.prepareStatement(UPDATE_QUERY);
+			pstmt.setString(1, user.getUsername());
+			pstmt.setString(2, user.getPassword());
+			pstmt.setString(3, user.getEmail());
+			pstmt.setString(4, user.getAddress());
+			pstmt.setInt(6, user.getUserId());
+
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void deleteUser(int userId) {
+		PreparedStatement pstmt = null;
+
+		try {
+			pstmt = connection.prepareStatement(DELETE_QUERY);
+			pstmt.setInt(1, userId);
+
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<User> getAllUsers() {
+		Statement stmt = null;
+		ResultSet res = null;
+		User user = null;
+		ArrayList<User> userList = new ArrayList<>();
+
+		try {
+			stmt = connection.createStatement();
+
+			res = stmt.executeQuery(SELECT_ALL_QUERY);
+
+			while (res.next()) {
+				int userId = res.getInt("userId");
+				String username = res.getString("username");
+				String password = res.getString("password");
+				String email = res.getString("email");
+				String address = res.getString("address");
+
+				user = new User(userId, username, password, email, address);
+				userList.add(user);
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return userList;
+	}
+}

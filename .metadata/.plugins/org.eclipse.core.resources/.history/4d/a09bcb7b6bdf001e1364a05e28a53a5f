@@ -1,0 +1,26 @@
+package com.bharat02.bufferedreader;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ReadBooleanValue {
+    public static void main(String args[]) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+//        System.out.print("Enter a boolean value: ");
+//        boolean a = Boolean.parseBoolean(br.readLine()); 
+//        
+//        System.out.println("Result: " + a);
+        System.out.print("Enter a boolean value (true/false): ");
+        
+        // Read the input as a string
+        String userInput = br.readLine();
+        
+        // Parse the string to obtain a boolean value
+        boolean booleanValue = Boolean.parseBoolean(userInput);
+
+        // Display the entered boolean value
+        System.out.println("You entered: " + booleanValue);
+    }
+}

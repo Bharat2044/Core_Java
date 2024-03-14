@@ -1,0 +1,18 @@
+package com.bharat.operators;
+
+public class DotOperator 
+{  
+											void display()   
+{  
+double d = 67.54;  
+//casting double type to integer  
+int i = (int)d;  
+System.out.println(i);  
+}  
+public static void main(String args[])   
+{  
+DotOperatorExample1 doe = new DotOperatorExample1();  
+//method calling  
+doe.display();  
+}  
+}  

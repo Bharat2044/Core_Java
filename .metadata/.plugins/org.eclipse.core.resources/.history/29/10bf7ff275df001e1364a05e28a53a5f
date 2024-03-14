@@ -1,0 +1,24 @@
+package com.bharat03.commandlinearguments;
+
+import java.util.Scanner;
+
+public class ReadByteValue {
+    public static void main(String args[]) {
+        
+//        System.out.print("Enter a number: ");
+//        byte a = Byte.parseByte(args[0]);
+//        
+//        System.out.println("The number is: " + a);
+    	
+    	Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter a number: ");
+            byte a = scanner.nextByte();
+
+            System.out.println("The number is: " + a);
+        } finally {
+            scanner.close();
+        }
+    }
+}
