@@ -1,8 +1,0 @@
-package com.food.daoimpl;
-
-public class Main {
-	public static void main(String[] args) {
-		
-		
-	}
-}
