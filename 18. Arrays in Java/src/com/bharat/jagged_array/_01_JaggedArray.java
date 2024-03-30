@@ -1,4 +1,4 @@
-package com.bharat.jaggedarray;
+package com.bharat.jagged_array;
 
 public class _01_JaggedArray {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.bharat.jaggedarray;
+package com.bharat.jagged_array;
 
 import java.util.Scanner;
 

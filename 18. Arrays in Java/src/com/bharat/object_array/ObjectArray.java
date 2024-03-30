@@ -1,4 +1,4 @@
-package com.bharat.objectarray;
+package com.bharat.object_array;
 
 public class ObjectArray {
 	public static void main(String[] args) {

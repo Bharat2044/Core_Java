@@ -10,6 +10,7 @@ public class _07_RowAndColumnSum {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++)
                 System.out.print(arr[i][j] + "  ");
+            
             System.out.println();
         }
         System.out.println();
@@ -19,6 +20,7 @@ public class _07_RowAndColumnSum {
         System.out.print("Array row sums are: ");
         for (int i = 0; i < m; i++) {
             int sum = 0;
+            
             for (int j = 0; j < n; j++)
                 sum += arr[i][j];
             System.out.print(sum + "  ");
@@ -30,6 +32,7 @@ public class _07_RowAndColumnSum {
         System.out.print("Array column sums are: ");
         for (int i = 0; i < n; i++) {
             int sum = 0;
+            
             for (int j = 0; j < m; j++)
                 sum += arr[j][i];
             System.out.print(sum + "  ");
