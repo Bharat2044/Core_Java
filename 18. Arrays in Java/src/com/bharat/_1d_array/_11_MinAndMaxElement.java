@@ -2,7 +2,7 @@ package com.bharat._1d_array;
 
 import java.util.Arrays;
 
-public class _11_MinAndMinElement {
+public class _11_MinAndMaxElement {
 
 	public static void main(String[] args) {
 		int[] arr = { 10, 40, 50, -60, 20, 90, 70, -80 };
