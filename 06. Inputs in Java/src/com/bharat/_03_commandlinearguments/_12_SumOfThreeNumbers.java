@@ -9,6 +9,6 @@ public class _12_SumOfThreeNumbers {
 
 		int sum = a + b + c;
 
-		System.out.println("Sum = " + a);
+		System.out.println("Sum = " + sum);
 	}
 }
