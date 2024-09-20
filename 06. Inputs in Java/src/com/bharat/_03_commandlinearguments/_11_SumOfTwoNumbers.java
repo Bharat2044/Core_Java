@@ -8,6 +8,6 @@ public class _11_SumOfTwoNumbers {
         
         int sum = a + b;
         
-        System.out.println("Sum = " + a);
+        System.out.println("Sum = " + sum);
     }
 }
