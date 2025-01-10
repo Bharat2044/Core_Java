@@ -1,5 +1,18 @@
 # **Core JAVA (JSE : Java Standalone Edition)**
 
+### This repository contains Core Java Code Topics Wise in Details.
+## 📌 Note: Check src` folder for codes.
+
+## 🔥 **Clone this Repository** 💫
+
+Write the following commands on your terminal to clone this repository, so that you can run this project locally.
+
+```bash
+git clone https://github.com/Bharat2044/Core_Java.git
+```
+
+## 👨‍💻 **Contents** 👀
+
 ## [01. Hello World using Java](./01.%20Hello%20World%20using%20Java/ "Hello World using Java")
 ## [02. Variables in Java](./02.%20Variables%20in%20Java/ "Variables in Java")
 ## [03. Datatypes in Java](./03.%20Datatypes%20in%20Java/ "Datatypes in Java")
@@ -16,3 +29,16 @@
 ## [14. Branching or Transferring Statements in Java](./14.%20Branching%20or%20Transferring%20Statements%20in%20Java/ "Branching or Transferring Statements in Java")
 ## [15. Loops Programs using Java](./15.%20Loops%20Programs%20using%20Java/ "Loops Programs using Java")
 ## [16. Pattern Printining Programs using Java](./16.%20Pattern%20Printining%20Programs%20using%20Java/ "Pattern Printining Programs using Java")
+## [17. Methods in Java](./17.%20Methods%20in%20Java/ "Methods in Java")
+## [18. Arrays in Java](./18.%20Arrays%20in%20Java/ "Arrays in Java")
+## [19. Strings in Java](./19.%20Strings%20in%20Java/ "Strings in Java")
+
+<br/>
+
+## 🔗 **Let's Connect** 🤝
+
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/bharat__2044)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bharat2044/)
+<a href='https://medium.com/@Bharat2044' target="_blank"><img alt='Medium' src='https://img.shields.io/badge/Medium-100000?style=plastic&logo=Medium&logoColor=000000&labelColor=475AC7&color=475AC7'/></a>
+[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/21453213/bharat2044)
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discordapp.com/users/1202345957216231446)
