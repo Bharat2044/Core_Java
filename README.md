@@ -32,6 +32,7 @@ git clone https://github.com/Bharat2044/Core_Java.git
 ## [17. Methods in Java](./17.%20Methods%20in%20Java/ "Methods in Java")
 ## [18. Arrays in Java](./18.%20Arrays%20in%20Java/ "Arrays in Java")
 ## [19. Strings in Java](./19.%20Strings%20in%20Java/ "Strings in Java")
+## [20. Command Line Arguments in Java](./20.%20Command%20Line%20Arguments%20in%20Java/ "Command Line Arguments in Java")
 
 <br/>
 
